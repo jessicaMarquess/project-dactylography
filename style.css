@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Roboto+Mono:wght@300;500;700&family=Yellowtail&display=swap');
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Yellowtail', cursive; */
+/* =====header==== */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li, a{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    font-size: 16px;
+    color: #24252a;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(228, 225, 225);
+}
+header img{
+    width: 50px;
+    height: 50px;
+    margin-right: auto;
+}
+.links{
+    list-style: none;
+}
+.links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.links li a {
+    transition: all 0.3s ease-out 0s;
+}
+.links li a:hover{
+    border: 1px solid #454545;
+    border-radius: 16px;
+    padding: 5px 20px;
+}
+.line{
+    background-color: #454545;
+    height: 1px;
+}
