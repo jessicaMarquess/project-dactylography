@@ -11,42 +11,38 @@ font-family: 'Yellowtail', cursive; */
 .background-different{
     background-image: url(/assets/img-1.jpg);
     background-repeat: no-repeat;
-    background-position: cover;
+    background-position: left;
     background-attachment:fixed;
     background-size: 100%;
     height: 100%;
 }
-li, a{
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bolder;
-    font-size: 16px;
-    color: #24252a;
-    text-decoration: none;
-}
 header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
+    background-color: rgba(0,0,0,0.4);
+
 }
-.links{
-    list-style: none;
+
+ul{
+    text-align: center;
 }
 .links li{
     display: inline-block;
     padding: 0px 20px;
 }
 .links li a {
-    color: #eee;
-    transition: all 0.4s ease-out 0s;
+    display:block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: #912f40;
+    padding: 25px;
+    transition: all ease-in-out 0.2s;
 }
-.links li a:hover{
-    font-size: 18px;
+.links  li a:hover{
+    background-color: #583540;
+    color: #24252a;
 }
-.line{
-    background-color: rgb(202, 200, 200);
-    height: 1px;
-}
+
 .banner{
     display: flex;
     justify-content: left;
@@ -60,9 +56,10 @@ header{
 .animation-logo span{
     position: relative;
     display: inline-block;
-    font-family: 'Nanum Gothic', sans-serif; 
-    color: #eee;
-    text-shadow: #912f40 0 -2px;
+    font-family: 'Roboto Mono', monospace; 
+    text-transform: uppercase;
+    color: #912f40;
+    text-shadow: #583540 0 -2px;
     font-size: 50px;
     animation: animate 2s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
@@ -87,16 +84,19 @@ header{
     text-align: center;
 }
 .stories h1{
+    margin-top: 20px;
     padding: 25px;
     font-family: 'Nanum Gothic', sans-serif; 
     color: #eee;
-    font-size: 50px;
+    font-size: 40px;
     border-bottom: 2px solid;
-    background-color: #912f40;
+    border-right: 2px solid;
+    color: #912f40; 
 }
 
 .slider{
-    max-width: 1150px;
+    bottom: 50px;
+    max-width:1000px;
     display: flex;
     flex-direction: row;
 }
@@ -106,7 +106,7 @@ header{
     margin: 0 10px;
 }
 .slider .card .img{
-    height: 400px;
+    height: 250px;
     width: 100%;
 }
 .slider .card .img img{
@@ -150,4 +150,72 @@ header{
 }
 .card .content .btn button:hover{
     transform: scale(0.9);
+}
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: #912f40;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease-in-out;
+}
+.socials a:hover i{
+    color: #912f40;
+}
+
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.footer-bottom span{
+    color: #702632;
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: bold;
 }

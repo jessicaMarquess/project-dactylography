@@ -3,10 +3,11 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Datilografe</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" ></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <title>Datilografe</title>
     </head>
     <body>
         <div class="background-different">
@@ -19,7 +20,6 @@
                     </ul>
                 </nav>
             </header>
-            <div class="line"></div>
             <section class="banner">
                 <div class="animation-logo">
                     <span style="--i:1";>D</span>
@@ -41,7 +41,7 @@
         </div>
         
         <section class="stories">
-            <h1>Algumas histórias</h1>
+            <h1>Mais Acessados</h1>
             <div class="slider owl-carousel">
                 
                 <div class="card">
@@ -77,14 +77,40 @@
                         </div>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="img"><img src="./assets/carrosel-4.jpg" alt="Ocean"></div>
+                    <div class="content">
+                        <div class="title">Horror Storie 4</div>
+                        <div class="sub-title">Autor Desconhecido</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis quidem ex unde sequi odio vel incidunt obcaecati ratione doloribus?</p>
+                        <div class="btn">
+                            <button>Me leia</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <script>
                 $(".slider").owlCarousel({
                     loop: true,
                     autoplay: true,
-                    autoplayTimeout: 2000,
+                    autoplayTimeout: 4000,
                 });
             </script>
         </section>
+        <footer>
+            <div class="footer-content">
+                <h3>Datilografe</h3>
+                <p>Quem sou? Uma desenvolvedora iniciante, acompanhe meus projetos!</p>
+                <ul class="socials">
+                    <li><a href="https://twitter.com/Jessica88777746" target="_blank"><i class='fa fa-twitter'></i></a></li>
+                    <li><a href="https://www.instagram.com/jessicamarques.css/" target="_blank"><i class='fa fa-instagram'></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jessica-marques-0346a81a9/" target="_blank"><i class='fa fa-linkedin-square'></i></a></li>
+                    <li><a href="https://github.com/jessicaMarquess" target="_blank"><i class='fa fa-github-square'></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2021. Designed by <span>Jessica Marques</span></p> 
+            </div>
+        </footer>
     </body>
 </html>
