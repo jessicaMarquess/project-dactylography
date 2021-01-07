@@ -4,6 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>Datilografe</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" ></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     </head>
     <body>
         <div class="background-different">
@@ -37,6 +40,51 @@
             </section>
         </div>
         
-        <section class="apresentation"></section>
+        <section class="stories">
+            <h1>Algumas histórias</h1>
+            <div class="slider owl-carousel">
+                
+                <div class="card">
+                    <div class="img"><img src="./assets/carrosel-1.jpg" alt="Ocean"></div>
+                    <div class="content">
+                        <div class="title">Horror Storie 1</div>
+                        <div class="sub-title">Autor Desconhecido</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis quidem ex unde sequi odio vel incidunt obcaecati ratione doloribus?</p>
+                        <div class="btn">
+                            <button>Me leia</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="./assets/carrosel-2.jpg" alt="Ocean"></div>
+                    <div class="content">
+                        <div class="title">Horror Storie 2</div>
+                        <div class="sub-title">Autor Desconhecido</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis quidem ex unde sequi odio vel incidunt obcaecati ratione doloribus?</p>
+                        <div class="btn">
+                            <button>Me leia</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img"><img src="./assets/carrosel-3.jpg" alt="Ocean"></div>
+                    <div class="content">
+                        <div class="title">Horror Storie 3</div>
+                        <div class="sub-title">Autor Desconhecido</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis quidem ex unde sequi odio vel incidunt obcaecati ratione doloribus?</p>
+                        <div class="btn">
+                            <button>Me leia</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(".slider").owlCarousel({
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                });
+            </script>
+        </section>
     </body>
 </html>
