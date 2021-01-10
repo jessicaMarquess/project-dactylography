@@ -6,3 +6,9 @@ window.onmousemove = function(event){
     container.style.backgroundPositionX = x + 'px';
     container.style.backgroundPositionY = y + 'px';
 };
+//index.html
+$(".slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+});

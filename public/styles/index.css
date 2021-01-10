@@ -10,7 +10,7 @@ font-family: 'Yellowtail', cursive; */
 }
 .background-different{
     /* background-color: #080705; */
-    background-image: url(/assets/img-1.jpg);
+    background-image: url(../assets/img-1.jpg);
     background-repeat: no-repeat;
     background-position: left;
     background-attachment:fixed;
