@@ -8,42 +8,39 @@ font-family: 'Yellowtail', cursive; */
     margin: 0;
     padding: 0;
 }
-.background-different{
-    /* background-color: #080705; */
-    background-image: url(../assets/img-1.jpg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-attachment:fixed;
-    background-size: 100%;
-    height: 100%;
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 header{
-    background-color: rgba(90, 90, 90, 0.1);
-
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img-1.jpg);
+    background-size: cover;
+    background-position: center;
 }
-
 ul{
     text-align: center;
 }
 .links li{
-    display: inline-block;
-    padding: 0px 20px;
+    float: right;
+    margin-left: 40px;
+    margin-top: 25px;
 }
-.links li a {
+.links li a:link,
+.links li a:visited {
     display:block;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
     font-family: 'Roboto Mono', monospace;
     color: #e4cbcc;
-    padding: 25px;
-    transition: all ease-in-out 0.2s;
+    padding: 8px 0;
+    transition: border-bottom 0.4s;
 }
-.links  li a:hover{
-    background-color: #583540;
-    color: #24252a;
+.links  li a:hover,
+.links  li a:active{
+    border-bottom: 2px solid #912f40;
 }
-
 .banner{
     display: flex;
     justify-content: left;
@@ -52,16 +49,18 @@ ul{
     padding-left: 50px;
 }
 .animation-logo{
+    float: left;
     position: relative;
 }
 .animation-logo span{
+    margin-top: 30px;
     position: relative;
     display: inline-block;
     font-family: 'Roboto Mono', monospace; 
     text-transform: uppercase;
     color: #e4cbcc;
     text-shadow: #583540 0 -2px;
-    font-size: 50px;
+    font-size: 20px;
     animation: animate 2s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
 }
